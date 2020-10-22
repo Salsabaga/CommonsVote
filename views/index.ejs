@@ -1,0 +1,38 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="member-search">
+        <form action="/" method="post">
+            <input type="text" name="firstSearch" id="">
+            <input type="text" name="surnameSearch" id="">
+            <button type="submit">Search</button>
+            </form>
+    </div>
+    <div class="name">
+        <h1>Enter a PM</h1>
+        <% if (name!==null) { %>
+         <%=name%>
+        <% } %>
+    </div>  
+    <div class="details">
+        <% if (party!==null&&constituency!==null) { %>
+         <%=party%>
+         <%=constituency%>
+        <% } %>
+    </div>
+    <div class="voting">
+        <% if (vote!==null&&date!==null&&title!==null) { %>
+         <%=title%>
+         <%=date%>
+         <%=vote%>
+        <% } %>
+    </div>  
+
+    <script src="app.js"></script>
+</body>
+</html>
